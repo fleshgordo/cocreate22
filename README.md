@@ -2,8 +2,10 @@
 
 ## Birds Data: Of Songs and Movement
 
-A one-week workshop together with [Selena Savic](https://www.fhnw.ch/de/personen/selena-savic). Link to [Vorlesungsverzeichnis](https://vorlesungsverzeichnis.hgk.fhnw.ch/#/)
 Learning materials for Co-Create week "Birds Data: Of Songs and Movement" at FHNW Basel September 2022. 
+A one-week workshop together with [Selena Savic](https://www.fhnw.ch/de/personen/selena-savic). 
+
+Link to [Vorlesungsverzeichnis](https://vorlesungsverzeichnis.hgk.fhnw.ch/#/)
 
 ## Files
 
@@ -11,8 +13,8 @@ Click on below links to open the handbooks in Colab:
 
 - [Python Basics](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/001_python_first_steps.ipynb)
 - [Scraping](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/002_scraping.ipynb)
-- [Animal Tracker](https://github.com/fleshgordo/cocreate22/blob/main/003_animaltracker.ipynb)
-- [Plotting Data](https://github.com/fleshgordo/cocreate22/blob/main/004_plotting.ipynb)
+- [Animal Tracker](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/003_animaltracker.ipynb)
+- [Plotting Data](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/004_plotting.ipynb)
 
 ## Description
 
@@ -20,8 +22,11 @@ Wildlife tracking is a popular activity for nature enthusiasts, as well as an im
 
 Working with two archives of animal observation will bring out the intricacies of data collection in the wild and emphasize the contradiction between the perceived 'wilderness' of birds and their continuous tracking. We seek to unfold narratives and stories from the data, and find unexpected, irregular and even incorrect observations.
 
-## Links
+## References and Links
 
+- Learn [Python the hard way](https://learnpythonthehardway.org/book/)
+- [Web scraper in python](https://first-web-scraper.readthedocs.io/en/latest/) great and exhaustive tutorial
+- [Curl converter](https://curlconverter.com/python/) prepares request in correct format
 
 ## Tags
 python, datascience, creativecoding, web scraping
