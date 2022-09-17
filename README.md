@@ -20,8 +20,11 @@ Wildlife tracking is a popular activity for nature enthusiasts, as well as an im
 
 Working with two archives of animal observation will bring out the intricacies of data collection in the wild and emphasize the contradiction between the perceived 'wilderness' of birds and their continuous tracking. We seek to unfold narratives and stories from the data, and find unexpected, irregular and even incorrect observations.
 
-## Links
+## References and Links
 
+- Learn [Python the hard way](https://learnpythonthehardway.org/book/)
+- [Web scraper in python](https://first-web-scraper.readthedocs.io/en/latest/) great and exhaustive tutorial
+- [Curl converter](https://curlconverter.com/python/) prepares request in correct format
 
 ## Tags
 python, datascience, creativecoding, web scraping
