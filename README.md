@@ -1,6 +1,6 @@
 # CoCreate - Woche 38 / 2022
 
-## Intro
+## Birds Data: Of Songs and Movement
 
 A one-week workshop together with [Selena Savic](https://www.fhnw.ch/de/personen/selena-savic). Link to [Vorlesungsverzeichnis](https://vorlesungsverzeichnis.hgk.fhnw.ch/#/)
 Learning materials for Co-Create week "Birds Data: Of Songs and Movement" at FHNW Basel September 2022. 
