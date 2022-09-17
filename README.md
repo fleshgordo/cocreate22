@@ -2,15 +2,15 @@
 
 ## Intro
 
-A one-week workshop together with [Selena Savic](https://www.fhnw.ch/de/personen/selena-savic)
-Learning materials for Co-Create week "Birds Data: Of Songs and Movement" at FHNW Basel September 2022.
+A one-week workshop together with [Selena Savic](https://www.fhnw.ch/de/personen/selena-savic). Link to [Vorlesungsverzeichnis](https://vorlesungsverzeichnis.hgk.fhnw.ch/#/)
+Learning materials for Co-Create week "Birds Data: Of Songs and Movement" at FHNW Basel September 2022. 
 
 ## Files
 
 Click on below links to open the handbooks in Colab:
 
-- [001: Python Basics](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/001_python_first_steps.ipynb)
-- [002: Scraping](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/002_scraping.ipynb)
+- [Python Basics](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/001_python_first_steps.ipynb)
+- [Scraping](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/002_scraping.ipynb)
 
 ## Description
 
