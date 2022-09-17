@@ -28,6 +28,7 @@ Working with two archives of animal observation will bring out the intricacies o
 
 - Learn [Python the hard way](https://learnpythonthehardway.org/book/)
 - [Web scraper in python](https://first-web-scraper.readthedocs.io/en/latest/) great and exhaustive tutorial
+- [Scrapism](https://scrapism.lav.io/) by Sam Levigne (great stuff) 
 - [Curl converter](https://curlconverter.com/python/) prepares request in correct format
 
 ## Tags
