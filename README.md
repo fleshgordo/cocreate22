@@ -11,7 +11,7 @@ Link to [Vorlesungsverzeichnis](https://vorlesungsverzeichnis.hgk.fhnw.ch/#/)
 
 Click on below links to open the handbooks in Colab:
 
-- [Python Basics](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/001_python_first_steps.ipynb)
+- [Python Basics](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/001_python_first_steps.ipynb) [Python Basics in German](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/001_python_first_steps_DE.ipynb)
 - [Scraping](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/002_scraping.ipynb)
 - [Animal Tracker](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/003_animaltracker.ipynb)
 - [Plotting Data](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/004_plotting.ipynb)
