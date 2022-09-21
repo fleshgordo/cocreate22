@@ -16,7 +16,7 @@ Click on below links to open the handbooks in Colab:
 - [Animal Tracker Light](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/003_animaltracker_light.ipynb)
 - [Animal Tracker Advanced](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/003_animaltracker_advanced.ipynb)
 - [Plotting Data](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/004_plotting.ipynb)
-- [Code Snippets and Examples](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/005_sandbox.ipynb)
+- [Code Snippets and Examples](https://colab.research.google.com/github/fleshgordo/cocreate22/blob/main/005_examples.ipynb)
 
 ## Description
 
