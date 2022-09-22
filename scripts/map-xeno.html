@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fieldguide Dashboard</title>
+    <title>xeno-canto map visualisation</title>
     <meta name="author" content="Gordan Savicic">
     <meta name="description" content="">
 
@@ -53,8 +53,12 @@
         // }]
         let newContainer = []
 
-
-        fetch("./data/xeno-world.json")
+        let file_A = "./data/xeno-world.json";
+        let file_B = "./data/xeno.json";
+        
+        let color_A = [255, 0, 0, 25];
+        let color_B = [0, 0, 255, 25]
+        fetch(file_A)
             .then(response => response.json())
             .then(function (data) {
                 //console.log(data)
@@ -63,7 +67,20 @@
                     newContainer.push({
                         "position": newArray,
                         "normal": [-1, 0, 0],
-                        "color": [255, 0, 0, 25]
+                        "color": color_A
+                    })
+                });
+                return fetch(file_B);
+            })
+            .then(response => response.json())
+            .then(function (data) {
+                console.log(data)
+                data.forEach(data => {
+                    let newArray = [data["lng"], data["lat"]]
+                    newContainer.push({
+                        "position": newArray,
+                        "normal": [-1, 0, 0],
+                        "color": color_B
                     })
                 });
                 //console.log(newContainer[0])
