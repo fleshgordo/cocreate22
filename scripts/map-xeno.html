@@ -48,16 +48,16 @@
     <!-- Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <script>
-        // let newContainer = [{
-        //     "path": []
-        // }]
         let newContainer = []
 
-        let file_A = "./data/xeno-world.json";
-        let file_B = "./data/xeno.json";
-        
+        let file_A = "./data/df_paginated_A.json";
+        let file_B = "./data/df_paginated_B.json";
+        let file_C = "./data/df_paginated_C.json";
+
         let color_A = [255, 0, 0, 25];
-        let color_B = [0, 0, 255, 25]
+        let color_B = [0, 0, 255, 25];
+        let color_C = [0, 255, 0, 25];
+
         fetch(file_A)
             .then(response => response.json())
             .then(function (data) {
@@ -74,13 +74,26 @@
             })
             .then(response => response.json())
             .then(function (data) {
-                console.log(data)
+                //console.log(data)
                 data.forEach(data => {
                     let newArray = [data["lng"], data["lat"]]
                     newContainer.push({
                         "position": newArray,
                         "normal": [-1, 0, 0],
                         "color": color_B
+                    })
+                });
+                return fetch(file_C);
+            })
+            .then(response => response.json())
+            .then(function (data) {
+                //console.log(data)
+                data.forEach(data => {
+                    let newArray = [data["lng"], data["lat"]]
+                    newContainer.push({
+                        "position": newArray,
+                        "normal": [-1, 0, 0],
+                        "color": color_C
                     })
                 });
                 //console.log(newContainer[0])

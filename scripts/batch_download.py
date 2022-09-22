@@ -34,7 +34,7 @@ if answer == "y":
             print("adding " + str(len(resp["recordings"])) + " entries to existing dataframe")
             print("currently " + str(len(df.index)) + " entries in dataframe") 
         sleep(1 + random.random() * 2) # make pause between requests
-    outputfile = "sample_data/df_paginated_"+ quality +".csv"
+    outputfile = "data/df_paginated_"+ quality +".csv"
     df.dropna().to_csv(outputfile, columns = ["lng","lat","q"])
 else:
     print("exit - ciao")

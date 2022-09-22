@@ -1,8 +1,7 @@
-import requests
 import pandas as pd
-from time import sleep
-import random 
 
-df = pd.read_csv("sample_data/df_paginated_B.csv")
+files = ["data/df_paginated_A","data/df_paginated_B","data/df_paginated_C","data/df_paginated_D","data/df_paginated_E"]
 
-df.to_json("sample_data/df_paginated_B.json",orient='records')
+for single_file in files:
+    df = pd.read_csv(single_file+".csv")
+    df.to_json(single_file+".json",orient='records')
