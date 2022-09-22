@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldguide Dashboard</title>
+    <meta name="author" content="Gordan Savicic">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link href="./css/index.4aa32ace.css" rel="stylesheet">
+    <script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
+
+    <!-- optional if mapbox base map is needed -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+
+        .bg-sidebar {
+            background: #f3f3f3;
+        }
+    </style>
+</head>
+
+<body class=" font-family-karla flex">
+    <div class="relative w-full flex flex-col h-screen overflow-y-hidden">
+        <!-- Mobile Header & Nav -->
+        <header class="w-full bg-sidebar py-5 px-6">
+            <div class="flex items-center justify-between">
+                <span href="index.html" class="text-black text-3xl uppercase hover:text-gray-300">xeno-canto
+                    tracks</span>
+            </div>
+        </header>
+
+        <div class="w-full h-screen overflow-x-hidden border-t flex flex-col">
+            <div id="map" class="w-full h-screen">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script>
+        // let newContainer = [{
+        //     "path": []
+        // }]
+        let newContainer = []
+
+
+        fetch("./data/xeno-world.json")
+            .then(response => response.json())
+            .then(function (data) {
+                //console.log(data)
+                data.forEach(data => {
+                    let newArray = [data["lng"], data["lat"]]
+                    newContainer.push({
+                        "position": newArray,
+                        "normal": [-1, 0, 0],
+                        "color": [255, 0, 0, 25]
+                    })
+                });
+                //console.log(newContainer[0])
+                new deck.DeckGL({
+                    //mapStyle: 'https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json',
+                    //mapStyle: '	https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+                    mapStyle: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+                    initialViewState: {
+                        longitude: newContainer[0]["position"][0],
+                        latitude: newContainer[0]["position"][1],
+                        zoom: 3
+                    },
+                    controller: true,
+                    layers: [
+                        new deck.PointCloudLayer({
+                            id: 'path-layer',
+                            data: newContainer,
+                            pickable: false,
+                            pointSize: 3,
+                            getPosition: d => d.position,
+                            getNormal: d => d.normal,
+                            getColor: d => d.color
+                        })
+                    ]
+                });
+            });
+    </script>
+</body>
+
+</html>
